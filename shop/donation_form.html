@@ -1,8 +1,29 @@
-<br><link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.17.0">
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bald Panther</title>
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+
+    <meta property="og:title" content="Bald Panther">
+    <meta property="og:description" content="https://play.google.com/store/apps/details?id=com.BaldPanther.MadGran.Scary.Horror.Escape">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+	
+	<br><link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.17.0">
 <form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
 
     <div class="ym-products">
-    <div class="ym-block-title ym-products-title">Товары</div>
+    <div class="ym-block-title ym-products-title">Поддержать разработку</div>
 
     <div class="ym-product">
             <div class="ym-product-line">
@@ -24,14 +45,21 @@
         <div class="ym-block-title">О покупателе</div>
         
         <input class="ym-input" name="email" placeholder="Телефон или Email для чека" type="text">
-        
     </div>
-    
+	
+	<div class="ym-hidden-inputs">
+       <input name="shopSuccessURL" type="hidden" value="https://play.google.com/store/apps/details?id=com.BaldPanther.MadGran.Scary.Horror.Escape">
+    </div>
+    <input name="customerNumber" type="hidden" value="Поддержать разработку">
+	
     <div class="ym-payment-btn-block ym-before-line ym-align-space-between">
         <div class="ym-input-icon-rub ym-display-none">
             <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number" step="any" value="100">
         </div>
-        <button data-text="Заплатить" class="ym-btn-pay ym-result-price"><span class="ym-text-crop">Заплатить</span> <span class="ym-price-output">100,00&nbsp;₽</span></button><img src="https://yookassa.ru/integration/simplepay/img/iokassa-gray.svg?v=1.17.0" class="ym-logo" width="114" height="27" alt="ЮKassa">
+        <button data-text="Пожертвовать" class="ym-btn-pay ym-result-price"><span class="ym-text-crop">Заплатить</span> <span class="ym-price-output">100,00&nbsp;₽</span></button>
     </div>
 <input name="shopId" type="hidden" value="469523"></form>
 <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js?v=1.17.0"></script>
+	
+  </body>
+</html>
